@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(85, 80, 80, 0.788),transparent), url(images/pexels-photo-1496647.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0 5%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 5px;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 1s;
+}
+.logo:hover{
+    transform: scale(0.9);
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 400;
+    transition: transform 1s;
+    display: block;
+    width: 40px;
+}
+nav ul li a:hover{
+    color: rgb(9, 131, 110);
+    transform: scale(1.2);
+   
+}
+.text-box {
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+.text-box h1{
+    font-size: 200px;
+    line-height: 150px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 15s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text-box h3{
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+.text-box .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+.text-box a:hover{
+    background-color: white;
+    color: black;
+    transform: scale(.9);
+}
+.social-icon {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+.social-icon img{
+    display: block;
+    width: 25px;
+    margin: 25px 5px;
+    transition: transform 1s;
+}
+.social-icon img:hover{
+   transform: scale(1.3);
+   
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+p{
+    margin: 20px;
+}
